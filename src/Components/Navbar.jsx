@@ -34,9 +34,9 @@ export default function Navbar() {
 
      <a
        href="#"
-       class="rounded-lg  px-5 py-2 text-pink-700  text-lg font-bold font-medium "
+       class="rounded-lg  px-5 py-2 text-indigo-700  text-lg font-bold font-medium "
      >
-      OU MAP
+    <i class="fas fa-map">  </i>    OU MAP
      </a>
    </div>
 
@@ -63,8 +63,8 @@ export default function Navbar() {
       class="hidden items-center justify-center gap-8 text-sm font-medium lg:flex lg:w-0 lg:flex-1"
     >
              <a class=" text-gray-900" href=""> <i class="fas fa-map-pin">  </i>   Map </a>
-    <a class="rounded-lg  px-5 py-2 text-sm font-medium text-white bg-pink-700" href=""> <i class="fas fa-user"> </i>   Participants</a>
-      <a class=" text-gray-900" href=""><i class="fas fa-circle-info">  </i>   Projects</a>
+    <a class="rounded-lg  px-5 py-2 text-sm font-medium text-white bg-indigo-700" href=""> <i class="fas fa-user"> </i>   Participants</a>
+      <a class=" text-gray-900" href=""><i class="fas fa-cog">  </i>   Settings</a>
       
     </nav>
 
@@ -77,7 +77,7 @@ export default function Navbar() {
     >
       <a class="flex-shrink-0 pl-4 text-gray-900" href="">Participants</a>
       <a class="flex-shrink-0 pl-4 text-gray-900" href="">Map</a>
-      <a class="flex-shrink-0 pl-4 text-gray-900" href="">Projects</a>
+      <a class="flex-shrink-0 pl-4 text-gray-900" href="">Settings</a>
     
     </nav>
   </div>

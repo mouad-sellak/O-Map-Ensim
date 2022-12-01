@@ -22,12 +22,40 @@
         
       },
       {
-        "name": "Mouad Sellak",
-        "image": "./img/avatar.jpg",
-        "progress":"50%"
+        "name": "Charles oliveira",
+        "image": "./img/charles.jpg",
+        "progress":"55%"
         
       }
-   
+   ,
+   {
+    "name": "Emilie Hernandez",
+    "image": "./img/emilie.jpeg",
+    "progress":"20%"
+    
+  }
+,
+{
+  "name": "Amine harit",
+  "image": "./img/amine.webp",
+  "progress":"90%"
+  
+}
+,
+{
+  "name": "Kim Kardashian",
+  "image": "./img/kim.jpg",
+  "progress":"100%"
+  
+}
+,
+{
+  "name": "Cristiano Ronaldo",
+  "image": "./img/siu.jpg",
+  "progress":"100%"
+  
+}
+
       
     ]
   }
