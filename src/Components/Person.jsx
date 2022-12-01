@@ -32,7 +32,7 @@ export default function Person() {
   
   <h3 className='mt-4 text-lg rounded-md   font-bold bg-indigo-700 text-white p-2'>  Nombre de Participants: {length} </h3>
   </div>
-        <div className='flex m-16 flex-wrap m-8 justify-around  '>
+        <div className='flex m-24 flex-wrap m-8 justify-around  '>
             {person.data
             .filter((choice) => {
               if (query === "") {
@@ -72,7 +72,7 @@ export default function Person() {
     {choice.progress == "20%" &&   <div class="h-2 w-12 rounded-full bg-indigo-200"></div>}
     {choice.progress == "55%" &&   <div class="h-2 w-32 rounded-full bg-indigo-500"></div>}
     {choice.progress == "100%" &&   <div class="h-2 w-50 rounded-full bg-indigo-900"></div>}
-    {choice.progress == "90%" &&   <div class="h-2 w-48 rounded-full bg-indigo-800"></div>}
+    {choice.progress == "90%" &&   <div class="h-2 w-48 rounded-full bg-indigo-700"></div>}
      
 
     </div>
