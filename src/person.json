@@ -1,0 +1,33 @@
+{
+    "data": [
+      
+      {
+        "name": "Mouad Sellak",
+        "image": "./img/avatar.jpg",
+        "progress":"50%"
+        
+      },
+      {
+        "name": "Zakaria Loukili",
+        "image": "./img/zaki.png",
+        "progress":"70%"
+        
+      },
+      
+     
+      {
+        "name": "Duc",
+        "image": "./img/duc.jpeg",
+        "progress":"30%"
+        
+      },
+      {
+        "name": "Mouad Sellak",
+        "image": "./img/avatar.jpg",
+        "progress":"50%"
+        
+      }
+   
+      
+    ]
+  }
