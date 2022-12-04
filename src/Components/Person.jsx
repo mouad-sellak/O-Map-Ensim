@@ -32,7 +32,7 @@ export default function Person() {
   
   <h3 className='mt-4 text-lg rounded-md   font-bold bg-indigo-700 text-white p-2'>  Nombre de Participants: {length} </h3>
   </div>
-        <div className='flex m-24 flex-wrap m-8 justify-around  '>
+        <div className='flex m-28 flex-wrap m-8 justify-around  '>
             {person.data
             .filter((choice) => {
               if (query === "") {
