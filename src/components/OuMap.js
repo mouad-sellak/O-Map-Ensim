@@ -4,11 +4,15 @@ import { GoogleMap, useJsApiLoader,Marker  } from '@react-google-maps/api';
 const containerStyle = {
   width: '1000px',
   height: '600px',
-  margin:'50px',
+  margin:'100px',
 };
 
 const center = {
   lat:47.93833,
+  lng:0.22167
+};
+const pos1 = {
+  lat:4.93833,
   lng:0.22167
 };
 
@@ -40,6 +44,15 @@ function OuMap() {
         onUnmount={onUnmount}
       >
         <Marker
+      onLoad={()=>console.log("marker")}
+      position={pos1}
+    />
+
+<Marker
+      onLoad={()=>console.log("marker")}
+      position={center}
+    />
+     <Marker
       onLoad={()=>console.log("marker")}
       position={center}
     />

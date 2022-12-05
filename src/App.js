@@ -1,17 +1,16 @@
 // import Navbar from "./components/Navbar";
 import OuMap from "./components/OuMap";
-// import logo from './logo.svg';
-import './App.css';
-import Navbar from './Components/Navbar';
-import Person from './Components/Person';
-import Footer from './Components/Footer';
+import Navbar from './components/Navbar';
+import Nav from './components/Nav';
+import Person from './components/Person';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-     <Navbar />
+     <Nav />
      <OuMap />
-     <Person />
+      <Person />
      <Footer />
     </div>
   )
