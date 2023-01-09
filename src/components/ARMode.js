@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import "mind-ar/dist/mindar-image.prod.js";
 import "aframe";
 import "mind-ar/dist/mindar-image-aframe.prod.js";
-import "../css/ARMode.css";
+// import "../css/ARMode.css";
+import "./ARMode.css";
 import ModeViewAR from "./mindar-viewer";
 
 function ARMode() {
@@ -25,7 +26,7 @@ function ARMode() {
     setOldY(0);
     setOldZ(0);
     setX(-1.4);
-    setY();
+    setY(0);
     setZ(0);
     basicReset();
   };

@@ -1,0 +1,3 @@
+il faut installer les 2 packages mind-ar && aframe
+npm install aframe 
+npm install mind-ar 
