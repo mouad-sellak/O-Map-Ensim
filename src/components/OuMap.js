@@ -1,28 +1,14 @@
 import React, {useState} from 'react'
-import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
+import { GoogleMap, useJsApiLoader, Marker, Polygon } from '@react-google-maps/api';
 import { Button } from '@chakra-ui/react';
-
+import person from "../person.json";
 const containerStyle = {
-  width: '1000px',
-  height: '600px',
-  margin: '50px',
+  margin: "auto",
+  width: "80%",
+  height: "800px",
+  border: "3px solid blue",
+  padding: "10px"
 };
-
-
-const students = [
-   {
-    lat: 48.00454233910342,
-    lng: 0.21406909053153916
-  },
-   {
-    lat: 48.003393788665164,
-    lng: 0.20600100585967443
-  },
-  {
-    lat: 48.003393788665164,
-    lng: 0.20600100585967443
-  }
-]
 
 
 function OuMap() {
@@ -38,8 +24,8 @@ function OuMap() {
   const [map, setMap] = React.useState(null)
 
   const onLoad = React.useCallback(function callback(map) {
-    const bounds = new window.google.maps.LatLngBounds(position);
-    map.fitBounds(bounds);
+   // const bounds = new window.google.maps.LatLngBounds(position);
+   // map.fitBounds(bounds);
     setMap(map)
   }, [])
 
@@ -53,22 +39,16 @@ function OuMap() {
       center={position}
       onLoad={onLoad}
       onUnmount={onUnmount}
-      zoom={1}
+      zoom={10}
     >
-      {/* {students.map( (s)=>
+      {person.data.map( (s,id)=>
          <Marker
-         onLoad={() => console.log("marker")}
-         position={s}
-         title="Marker"
+         key={id}
+         position={s.pos}
+         label={s.name}         
          />
       )
-      }; */}
-      <Marker
-         onLoad={() => console.log("marker")}
-         position={position}
-         onClick={()=>console.log('CHNCJDBCDJ')}
-         title="Marker"
-         />
+      };
       <></>
     </GoogleMap>
   ) : <></>

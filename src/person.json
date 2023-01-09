@@ -1,61 +1,77 @@
 {
-    "data": [
-      
-      {
-        "name": "Mouad Sellak",
-        "image": "./img/avatar.jpg",
-        "progress":"50%"
-        
-      },
-      {
-        "name": "Zakaria Loukili",
-        "image": "./img/zaki.png",
-        "progress":"70%"
-        
-      },
-      
-     
-      {
-        "name": "Duc",
-        "image": "./img/duc.jpeg",
-        "progress":"30%"
-        
-      },
-      {
-        "name": "Charles oliveira",
-        "image": "./img/charles.jpg",
-        "progress":"55%"
-        
+  "data": [
+    {
+      "name": "Mouad Sellak",
+      "image": "./img/avatar.jpg",
+      "progress": "50%",
+      "pos":{
+        "lat": 48.00454233910342,
+        "lng": 0.21406909053153916
       }
-   ,
-   {
-    "name": "Emilie Hernandez",
-    "image": "./img/emilie.jpeg",
-    "progress":"20%"
-    
-  }
-,
-{
-  "name": "Amine harit",
-  "image": "./img/amine.webp",
-  "progress":"90%"
-  
-}
-,
-{
-  "name": "Kim Kardashian",
-  "image": "./img/kim.jpg",
-  "progress":"100%"
-  
-}
-,
-{
-  "name": "Cristiano Ronaldo",
-  "image": "./img/siu.jpg",
-  "progress":"100%"
-  
-}
+    },
+    {
+      "name": "Zakaria Loukili",
+      "image": "./img/zaki.png",
+      "progress": "70%",
+      "pos":{
+        "lat": 48.00124233910342,
+        "lng": 0.25206909053153916
+      }
+    },
 
-      
-    ]
-  }
+    {
+      "name": "Duc",
+      "image": "./img/duc.jpeg",
+      "progress": "30%",
+      "pos":{
+        "lat": 48.00124233910342,
+        "lng": 0.35206909053153916
+      }
+    },
+    {
+      "name": "Charles oliveira",
+      "image": "./img/charles.jpg",
+      "progress": "55%",
+      "pos":{
+        "lat": 48.00124233910342,
+        "lng": 0.45206909053153916
+      }
+    },
+    {
+      "name": "Emilie Hernandez",
+      "image": "./img/emilie.jpeg",
+      "progress": "20%",
+      "pos":{
+        "lat": 48.00124233910342,
+        "lng": 0.55206909053153916
+      }
+    },
+    {
+      "name": "Amine harit",
+      "image": "./img/amine.webp",
+      "progress": "90%",
+      "pos":{
+        "lat": 48.10124233910342,
+        "lng": 0.25206909053153916
+      }
+    },
+    {
+      "name": "Kim Kardashian",
+      "image": "./img/kim.jpg",
+      "progress": "100%",
+      "pos":{
+        "lat": 48.10124233910342,
+        "lng": 0.15206909053153916
+      }
+    },
+    {
+      "name": "Cristiano Ronaldo",
+      "image": "./img/siu.jpg",
+      "progress": "100%",
+      "pos":{
+        "lat": 48.10124233910342,
+        "lng": 0.05206909053153916
+      }
+    }
+  ]
+}
