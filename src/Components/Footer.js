@@ -8,7 +8,7 @@ export default function Footer() {
       class="flex flex-col items-center gap-4 rounded-lg bg-indigo-600 p-6 shadow-lg sm:flex-row sm:justify-between"
     >
       <strong class="text-xl text-white sm:text-xl">
-        Make Your Next Career Move!
+        Ou Map Team !
       </strong>
 
       <a
