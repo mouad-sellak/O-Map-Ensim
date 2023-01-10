@@ -24,7 +24,7 @@ export default function Person() {
     type="text"
     id="participant"
     placeholder="   Rechercher un participant"
-    class="mt-1 w-1/3 rounded-md border-gray-800 shadow-sm shadow-gray-400 sm:text-sm"
+    class="mt-1 w-1/3 h-12 rounded-md border-gray-800 shadow-sm shadow-gray-400 sm:text-sm"
     onChange={search}
   />
 
@@ -32,7 +32,7 @@ export default function Person() {
   
   <h3 className='mt-4 text-lg rounded-md   font-bold bg-indigo-700 text-white p-2'>  Nombre de Participants: {length} </h3>
   </div>
-        <div className='flex m-28 flex-wrap m-8 justify-around  '>
+        <div className='flex m-24 flex-wrap m-8 justify-around  '>
             {person.data
             .filter((choice) => {
               if (query === "") {
@@ -57,7 +57,7 @@ export default function Person() {
                      
 
 <div className='m-8'>
-                        <h3 class="mt-4 text-lg text-indigo-700  font-bold">{choice.name}</h3>
+                        <h3 class="mt-4 text-lg text-indigo-700 text-center  font-bold">{choice.name}</h3>
                         <div>
   <h2 class="sr-only">Steps</h2>
 
@@ -66,18 +66,18 @@ export default function Person() {
     <div class="overflow-hidden rounded-full bg-gray-200 mt-2">
       
 
-    {choice.progress == "50%" &&   <div class="h-2 w-28 rounded-full bg-indigo-500"></div>}
-    {choice.progress == "70%" &&   <div class="h-2 w-40 rounded-full bg-indigo-600"></div>}
-    {choice.progress == "30%" &&   <div class="h-2 w-16 rounded-full bg-indigo-300"></div>}
-    {choice.progress == "20%" &&   <div class="h-2 w-12 rounded-full bg-indigo-200"></div>}
-    {choice.progress == "55%" &&   <div class="h-2 w-32 rounded-full bg-indigo-500"></div>}
-    {choice.progress == "100%" &&   <div class="h-2 w-50 rounded-full bg-indigo-900"></div>}
-    {choice.progress == "90%" &&   <div class="h-2 w-48 rounded-full bg-indigo-700"></div>}
+    {choice.progress == "50%" &&   <div class="h-2 w-28  rounded-full bg-indigo-500"></div>}
+    {choice.progress == "70%" &&   <div class="h-2 w-40   rounded-full bg-indigo-600"></div>}
+    {choice.progress == "30%" &&   <div class="h-2 w-16   rounded-full bg-indigo-300"></div>}
+    {choice.progress == "20%" &&   <div class="h-2 w-12   rounded-full bg-indigo-200"></div>}
+    {choice.progress == "55%" &&   <div class="h-2 w-32   rounded-full bg-indigo-500"></div>}
+    {choice.progress == "100%" &&   <div class="h-2 w-50   rounded-full bg-indigo-900"></div>}
+    {choice.progress == "90%" &&   <div class="h-2 w-48   rounded-full bg-indigo-700"></div>}
      
 
     </div>
 
-    <p className='mt-2 text-indigo-700'>{choice.progress}</p>
+    <p className='mt-2 text-indigo-700 text-center'>{choice.progress}</p>
 
 
 
@@ -87,7 +87,12 @@ export default function Person() {
 
 <div className='flex justify-around m-4 '>
                        
-                            <a
+
+                               <button
+                            type="button"
+                            class="rounded-lg    text-white  bg-indigo-700 text-sm font-medium w-10"
+                        >
+<a
           href="https://wa.me/33659577133"
    
           target="_blank"
@@ -95,6 +100,7 @@ export default function Person() {
           class=" rounded-lg   text-white  bg-indigo-700  text-sm font-medium w-10"
         ><i class="fas fa-comments text-xl"></i></a>
                             
+                        </button>
                      
                         <button
                             type="button"
