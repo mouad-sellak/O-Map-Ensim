@@ -1,7 +1,7 @@
 {
   "name": "ou-map",
   "version": "0.1.0",
-  "homepage": "https://mouad-sellak.github.io/",
+  "homepage": "https://mouad-sellak.github.io/O-Map-Ensim/",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.4.6",
