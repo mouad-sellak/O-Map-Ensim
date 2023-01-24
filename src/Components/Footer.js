@@ -8,14 +8,14 @@ export default function Footer() {
       class="flex flex-col items-center gap-4 rounded-lg bg-indigo-600 p-6 shadow-lg sm:flex-row sm:justify-between"
     >
       <strong class="text-xl text-white sm:text-xl">
-        Ou Map Team !
+        Ou Map Equipe !
       </strong>
 
       <a
         class="inline-flex items-center rounded-full border border-white bg-white px-8 py-3 text-indigo-600 hover:bg-transparent hover:text-white focus:outline-none focus:ring active:bg-white/90"
         href="/"
       >
-        <span class="text-sm font-medium"> Let's Get Started </span>
+        <span class="text-sm font-medium"> Contacter L'équipe </span>
 
         <svg
           class="ml-3 h-5 w-5"
@@ -56,7 +56,7 @@ export default function Footer() {
       </div>
 
       <p class="mt-4 text-center text-sm text-gray-500 lg:mt-0 lg:text-right">
-        Copyright &copy; 2022. All rights reserved.
+        Copyright &copy; 2022. Tous les droits reservés.
       </p>
     </div>
   </div>

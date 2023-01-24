@@ -1,14 +1,32 @@
 import React, {useState} from 'react'
-import { GoogleMap, useJsApiLoader, Marker, Polygon } from '@react-google-maps/api';
-import { Button } from '@chakra-ui/react';
+import { GoogleMap, useJsApiLoader, Marker, Polygon, Polyline } from '@react-google-maps/api';
 import person from "../person.json";
+import path from "../path.json";
+import { BsPersonSquare as SquareIcon } from 'react-icons/bs';
+
 const containerStyle = {
   margin: "auto",
+  marginTop:"2%",
   width: "80%",
   height: "800px",
-  border: "3px solid blue",
+  border: "2px solid blue",
   padding: "10px"
 };
+
+const paths = path.data.map(item=> item.pos)
+
+const options = {
+  fillColor: "lightblue",
+  fillOpacity: 0,
+  strokeColor: "blue",
+  strokeOpacity: 1,
+  strokeWeight: 2,
+  clickable: false,
+  draggable: false,
+  editable: false,
+  geodesic: false,
+  zIndex: 1
+}
 
 
 function OuMap() {
@@ -16,6 +34,7 @@ function OuMap() {
     lat: 48.00448491218892,
     lng: 0.22230883657940106
   })
+  const [icon, setIcon] = useState(SquareIcon);
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
     googleMapsApiKey: "AIzaSyD41VnECyFQMyRHzpps677Cux6uLhZvUhU"
@@ -44,12 +63,18 @@ function OuMap() {
       {person.data.map( (s,id)=>
          <Marker
          key={id}
+      //   icon={s.image}
          position={s.pos}
          label={s.name}         
          />
       )
       };
       <></>
+      <Polygon
+      paths={paths}
+      options={options}
+    />
+      
     </GoogleMap>
   ) : <></>
 }
