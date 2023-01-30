@@ -14,7 +14,7 @@ function App() {
       <div className="App">
         <Navbar />
         <Routes>
-          <Route path="/" element={<OuMap />} />
+          <Route path="/O-Map-Ensim" element={<OuMap />} />
           <Route path="/Person" element={<Person />} />
         </Routes>
         <Footer />

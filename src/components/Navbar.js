@@ -35,34 +35,26 @@ export default function Navbar() {
 					{location.pathname === "/Person" &&
 						(
 							<>
-								<Link to="/" class="TEXT-GRAY-900" ><i class="fas fa-map-pin"> </i>    Map</Link>
+								<Link to="/O-Map-Ensim" class="TEXT-GRAY-900" ><i class="fas fa-map-pin"> </i>    Map</Link>
 								<Link to="/Person" class="rounded-lg  px-5 py-2 text-sm font-medium text-white bg-indigo-700"> <i class="fas fa-user">  </i>  Participants</Link>
 							</>
 						)}
-					{location.pathname === "/" &&
+					{location.pathname === "/O-Map-Ensim" &&
 						(
 							<>
-								<Link to="/" class="rounded-lg  px-5 py-2 text-sm font-medium text-white bg-indigo-700" ><i class="fas fa-map-pin"> </i>    Map</Link>
+								<Link to="/O-Map-Ensim" class="rounded-lg  px-5 py-2 text-sm font-medium text-white bg-indigo-700" ><i class="fas fa-map-pin"> </i>    Map</Link>
 								<Link to="/Person" class="text-gray-900"> <i class="fas fa-user">  </i>  Participants</Link>
 
 							</>
 						)}
 				</nav>
 				<a
-						href="https://bachensim.github.io/OuMapEnsim/"
-						class="rounded-lg  px-5 py-2 text-indigo-700  text-md font-bold "
-						target="_blank"
-					>	
-					<span className="">Réalité Augmentée</span>
-
-					</a>
-				{/* <button
-					className="text-blue cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block  outline-none focus:outline-none"
-					type="button"
-					onClick={() => setNavbarOpen(!navbarOpen)}
+					href="https://bachensim.github.io/OuMapEnsim/"
+					class="rounded-lg  px-5 py-2 text-indigo-700  text-md font-bold "
+					target="_blank"
 				>
-					<i className="fas fa-bars"></i>
-				</button> */}
+					<span className="">Réalité Augmentée</span>
+				</a>
 			</div>
 
 		</header>
