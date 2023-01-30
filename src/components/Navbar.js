@@ -12,7 +12,7 @@ export default function Navbar() {
 				<div class="hidden items-center gap-4 lg:flex">
 					<a
 						href=""
-						class="rounded-lg  px-5 py-2 text-indigo-700  text-lg font-bold font-medium "
+						class="rounded-lg  px-5 py-2 text-indigo-700  text-lg  "
 					>
 						<svg
 							class="h-8 text-indigo-600 font-medium"
